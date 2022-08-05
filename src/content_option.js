@@ -114,9 +114,10 @@ const dataportfolio = [
 {
     title: "Portfolio React",
     img: "images/imagesPortfolio/portfolio.jpg",
-    desctiption: "Ce site web. Fait en React et React Boostrap. ",
+    desctiption: "Ce site web. Fait en React et React Boostrap est mon portfolio personnel. On y retrouve plusieurs des projets que j'ai fait.",
     technologies: "React, HTML, CSS, React Boostrap",
-    link: "https://tp02int3.rossh2905.com/paper-dashboard-react",
+    link: "https://portfolio.rossh2905.com",
+    github: "https://github.com/rossh2905/portfolio",
 },
 ];
 
