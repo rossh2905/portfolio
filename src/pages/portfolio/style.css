@@ -1,80 +1,181 @@
-.po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
-}
-
-.po_item {
-    display: inline-block;
+.item {
     width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
-    position: relative;
-    background: var(--secondary-color);
-    padding: 6px;
-    border: 1px solid var(--secondary-color);
-    transition: 0.3s ease;
-    font-size: 0;
-    min-height: 300px;
 }
 
-.po_item img {
-    max-width: 100%;
+.item div {
+    box-sizing: border-box;
 }
 
-.po_item .content {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--overlay-color);
-    z-index: 1;
+.item img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s ease-in-out;
-    opacity: 0;
-    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 32px;
+    border: 4px var(--green) solid;
+    border-radius: 2px;
 }
 
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
+.text {
+    margin: 16px;
+}
+
+.item .title {
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.item .description {
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+.item .technologies {
+    float: right;
+}
+
+.item .technologies p, 
+.item .technologiesFlipped p {
+    display: inline;
+    font-size: 16px;
+}
+
+.item .technologiesFlipped {
+    float: left;
+}
+
+.item span {
     font-size: 20px;
 }
 
-.po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+@media (max-width:991.98px) {
+    .item .technologies,
+    .item .technologiesFlipped {
+        float: none;
+    }
 }
 
-.po_item:hover .content {
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
-    opacity: 1;
+.item hr {
+    width: 80%;
+    margin: auto !important;
+    margin-bottom: 64px !important;
 }
 
-.po_item:hover .content {
-    opacity: 1;
-    color: var(--secondary-color);
+.buttonContainer {
+    margin: 24px 0px 48px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.po_item .content a {
-    background: var(--bg-color);
-    border: solid 1px var(--text-color);
-    padding: 4px 8px;
-    text-align: center;
-    font-size: 1rem;
+.ac_btn {
+    font-size: 20px;
+    padding: 7px 20px;
+    color: white;
+    overflow: hidden;
+    transition: all 0.125s cubic-bezier(0.55, 0, 0.1, 1);
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 20px;
+    border: white 2px solid;
 }
 
-.po_item .content a:hover {
+.ac_btn a {
     text-decoration: none;
+}
+
+.ac_btn:hover {
+    box-shadow: 8px 8px 0px #2d7aac, -8px -8px 0px #b774f5;
+    background-color: var(--green) !important;
+    color: rgba(0, 0, 0, 0);
+    border: rgba(255, 255, 255, 0) 2px solid;
+}
+
+.ac_btn:hover .one {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.ac_btn:hover .two {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.ac_btn:hover .three {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.ac_btn:hover .four {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.ac_btn .ring {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    transform: translate3d(0px, 90px, 0px);
+}
+
+.ac_btn .one {
+    background-color: #000;
+    transition: all 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -3;
+    z-index: -4;
+}
+
+.ac_btn .two {
+    background-color: var(--primary-color);
+    transition: all 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -3;
+}
+
+.ac_btn .three {
+    background-color: var(--secondary-color);
+    z-index: -2;
+    transition: all 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -3;
+}
+
+#button_p {
+    color: white;
+}
+
+#button_p:hover {
+    color: white;
+}
+
+#button_h:hover {
+    color: var(--primary-color);
+}
+
+.form {
+    padding: 1.375rem .75rem;
+    line-height: 1.5;
+    color: var(--green);
+    background-color: var(--bg-color);
+    border-radius: 0 !important;
+    border: 1px solid var(--green);
+    width: 300px;
+    margin: -32px 0 48px 0;
+}
+
+.form:focus {
+    background-color: var(--bg-color) !important;
+    border: 1px solid var(--green);
+    box-shadow: 0px 0px 8px 2px rgba(41,161,157,0.86);
+}
+
+.github svg {
+    width: 36px;
+    height: 36px;
+    fill: var(--text-color);
+    transition-duration: 0.125s;
+}
+
+.github svg:hover {
+    fill: #8e66dc;
 }

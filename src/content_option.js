@@ -1,157 +1,143 @@
-const logotext = "JOHN";
+import { getAge } from "./functions";
+
+const logotext = "HAYDEN ROSS";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Hayden Ross",
+    description: "Je suis Hayden Ross _ Développeur full-stack",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "Je suis Hayden Ross, et j'aime:",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Créer",
+        second: "Programmer",
+        third: "Composer",
+        fourth: "Jouer"
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Créateur et inventif depuis mon plus jeune âge, j'adore autant programmer des sites web ou des jeux vidéos que de composer ou jouer de la musique.",
+    your_img_url: "images/concertRossh.jpg",
 };
 
+
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "Qui suis-je?",
+    aboutme: `Je m'apelle Hayden Ross, j'ai ${getAge("may 29 2003")} ans et j'adore créer. Créateur et inventif depuis mon plus jeune âge, j'adore autant programmer des sites web ou des jeux vidéos que de composer ou jouer de la musique.`,
 };
+
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+    jobtitle: "Collège O'Sullivan de Québec",
+    where: "Québec",
+    date: "2021 - 2022",
+},
+{
+    jobtitle: "Collège des Compagnons",
+    where: "Québec",
+    date: "2015 - 2020",
+},
 ];
 
 const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
+    name: "Javascript",
+    value: 65,
+},
+{
+    name: "React",
+    value: 48,
+},
+{
+    name: "PHP",
+    value: 58,
+},
+{
+    name: "CSS",
+    value: 81,
+},
+{
+    name: "GDScript",
+    value: 83,
+},
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
+    title: "Programmation",
+    description: "Web | Apps | Jeux vidéo",
+},
+{
+    title: "Jeux Vidéo",
+    description: "Créer | Jouer | Inventer",
+},
+{
+    title: "Musique",
+    description: "Composer | Interpréter | Écouter",
+},
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+const dataportfolio = [
+{
+    title: "Colnet Programmation II",
+    img: "images/imagesPortfolio/colnetDatabase.png",
+    desctiption: "Projet de PHP en programmation II. Permet à l'utilisateur de se créer un compte et de s'y connecté avec de la validation en PHP. Lorsque l'utilisateur est connecté, il peut créer des groupes, des étudiants et afficher toute sorte de données. (Le bouton Voir le projet permet principalement de voir le visuel du projet. Le coté backend ne marche pas)",
+    technologies: "HTML, CSS, PHP",
+    link: "https://colnet.rossh2905.com/accueil.php",
+    github: "https://github.com/rossh2905/colnet",
+},
+{
+    title: "Lancement entreprise site WordPress",
+    img: "images/imagesPortfolio/int2tp02.jpg",
+    desctiption: "Refonte d'un site de la formation professionnelle des navigateurs en WordPress Divi pour le cours d'intégration II..",
+    technologies: "WordPress, Divi",
+    link: "https://tp02.rossh2905.com/",
+},
+{
+    title: "Maquette LinkedIn",
+    img: "images/imagesPortfolio/maquetteLinkedIn.jpg",
+    desctiption: "Maquette mode sombre de LinkedIn incluant une barre de navigation, les invitations et plus encore.",
+    technologies: "HTML, CSS, Bootstrap",
+    link: "https://linkedin.rossh2905.com/maquette.html",
+    github: "https://github.com/rossh2905/linkedin",
+},
+{
+    title: "Metallica site WordPress",
+    img: "images/imagesPortfolio/int2tp03.jpg",
+    desctiption: "Refonte du site de Metallica en WordPress Divi pour le cours d'intégration II.",
+    technologies: "WordPress, Divi",
+    link: "https://tp03.rossh2905.com/",
+},
+{
+    title: "Dashboard React",
+    img: "images/imagesPortfolio/dashboardReact.jpg",
+    desctiption: "Dashboard fait en React et React Boostrap. Les données sont pris de plusieurs fichers json. ",
+    technologies: "React, HTML, CSS, React Boostrap",
+    link: "https://tp02int3.rossh2905.com/paper-dashboard-react",
+    github: "https://github.com/rossh2905/dashboard",
+},
+{
+    title: "Portfolio React",
+    img: "images/imagesPortfolio/portfolio.jpg",
+    desctiption: "Ce site web. Fait en React et React Boostrap. ",
+    technologies: "React, HTML, CSS, React Boostrap",
+    link: "https://tp02int3.rossh2905.com/paper-dashboard-react",
+},
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_EMAIL: "rossh2905@gmail.com",
+    YOUR_FONE: "(418) 945-2064",
+    description: "*J'ai tendance à répondre plus vite par mail que par téléphone.",
+    YOUR_SERVICE_ID: "service_yqapjyw",
+    YOUR_TEMPLATE_ID: "template_17cvx6l",
+    YOUR_USER_ID: "9VUtNk5jG5NPoIGVN",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    youtube: "https://youtube.com",
-    twitch: "https://twitch.com",
+    github: "https://github.com/rossh2905",
+    facebook: "https://www.facebook.com/profile.php?id=100003074858172",
+    linkedin: "https://www.linkedin.com/in/hayden-ross-bb2524228/",
+    instagram: "https://www.instagram.com/hayden_ross333/",
+    spotify: "https://open.spotify.com/",
+    email: "mailto:rossh2905@gmail.com",
 };
+
 export {
     meta,
     dataabout,

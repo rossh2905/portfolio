@@ -8,7 +8,9 @@
 }
 
 .t_border {
-    border-color: var(--text-color) !important;
+    background: var(--highlight-color) !important;
+    height: 1px;
+    margin-bottom: 16px;
 }
 
 .progress-title {
@@ -20,7 +22,7 @@
 
 .progress {
     height: 5px;
-    background: var(--secondary);
+    background: rgb(51, 52, 59);
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 30px;
@@ -59,11 +61,6 @@
 
 .section-title {
     font-size: 45px;
-}
-
-.service__title {
-    padding: 8px 0;
-    border-bottom: solid 2px var(--secondary-color);
 }
 
 .service-section .service-category-title {

@@ -81,7 +81,7 @@ section {
 }
 
 .intro_sec .text h1 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 50px;
     font-weight: 700;
 }
@@ -99,15 +99,15 @@ section {
 }
 
 .ac_btn {
-    padding: 4px 19px;
-    color: var(--secondary-color);
+    padding: 7px 20px;
+    color: white;
     position: relative;
-    border: var(--secondary-color) 2px solid;
     overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.125s cubic-bezier(0.55, 0, 0.1, 1);
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 2px;
     margin-right: 20px;
+    border: white 2px solid;
 }
 
 .ac_btn a {
@@ -115,7 +115,10 @@ section {
 }
 
 .ac_btn:hover {
-    box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
+    box-shadow: 8px 8px 0px #2d7aac, -8px -8px 0px #b774f5;
+    background-color: var(--green) !important;
+    color: rgba(0, 0, 0, 0);
+    border: rgba(255, 255, 255, 0) 2px solid;
 }
 
 .ac_btn:hover .one {
@@ -147,31 +150,34 @@ section {
 
 .ac_btn .one {
     background-color: #000;
-    transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
     z-index: -4;
 }
 
 .ac_btn .two {
     background-color: var(--primary-color);
-    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
 }
 
 .ac_btn .three {
     background-color: var(--secondary-color);
     z-index: -2;
-    transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
 }
 
 #button_p {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    color: white;
+}
+
+#button_p:hover {
+    color: white;
 }
 
 #button_h:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .intro_sec .h_bg-image .block {
@@ -230,5 +236,4 @@ section {
 }
 
 .intro_sec .h_bg-image {
-    filter: saturate(0.5);
 }

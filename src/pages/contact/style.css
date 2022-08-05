@@ -43,3 +43,7 @@ button.btn.ac_btn:hover {
         transform: translateX(100%);
     }
 }
+
+.descriptionContact {
+    font-size: 16px;
+}

@@ -1,10 +1,9 @@
 .stick_follow_icon {
-    top: 50%;
-    left: 30px;
+    top: 26%;
+    left: 50px;
     width: 20px;
     height: 200px;
     position: fixed;
-    margin-top: -100px;
 }
 
 .stick_follow_icon ul {
@@ -14,9 +13,35 @@
 }
 
 .stick_follow_icon svg {
-    width: 1.3em;
-    height: 1.3em;
-    fill: var(--text-color)
+    width: 3.6em;
+    height: 3.6em;
+    margin-bottom: 20px;
+    fill: var(--text-color);
+    transition-duration: 0.125s;
+}
+
+.stick_follow_icon .github svg:hover {
+    fill: #8e66dc;
+}
+
+.stick_follow_icon .facebook svg:hover {
+    fill: #2d86ff;
+}
+
+.stick_follow_icon .instagram svg:hover {
+    fill: #f8529c;
+}
+
+.stick_follow_icon .linkedin svg:hover {
+    fill: #2868b2;
+}
+
+.stick_follow_icon .spotify svg:hover {
+    fill: #1ccc5b;
+}
+
+.stick_follow_icon .email svg:hover {
+    fill: #de4032;
 }
 
 .stick_follow_icon p {
@@ -52,7 +77,7 @@
     background-color: var(--text-color);
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1400px) {
     .stick_follow_icon {
         width: unset;
         height: unset;

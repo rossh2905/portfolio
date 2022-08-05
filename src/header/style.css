@@ -2,6 +2,8 @@
     top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    background: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .menu__button {
@@ -15,15 +17,23 @@
 }
 
 .menu__button svg {
+    margin-top: -10px;
     width: 2em;
     height: 2em;
     fill: var(--text-color-2);
     color: var(--text-color-2);
+    transition-duration: 0.1s;
+}
+
+.menu__button svg:hover {
+    fill: var(--green);
+    color: var(--green);
 }
 
 .nav_ac {
     padding: 5px 15px;
     margin: 0;
+    padding-bottom: 20px;
     border: unset;
     background: var(--primary-color);
     font-size: 1.25rem;
@@ -33,10 +43,12 @@
     height: 50px;
     font-weight: bold;
     z-index: 1000;
+    transition-duration: 0.25s;
 }
 
 .nav_ac:hover {
-    color: var(--text-color-2);
+    fill: var(--green);
+    color: var(--green);
 }
 
 .br-top,
@@ -161,15 +173,18 @@
     padding-left: 0;
 }
 
-@media (min-width: 992px) {
-    .menu__container {
-        margin-left: 33.3333%;
-    }
-    .the_menu {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-    }
+
+.menu__container {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
 }
+
+.the_menu {
+    margin-top: -8vh;
+    padding-bottom: 0;
+}
+
 
 .the_menu .menu_item>a {
     color: var(--text-color-2);
@@ -184,9 +199,11 @@
 
 @media (min-width: 768px) {
     .the_menu .menu_item>a {
-        font-size: 4.8vw;
+        font-size: min(4.8vw, 80px);
     }
 }
+
+
 
 .menu_footer {
     bottom: 0;
@@ -198,4 +215,10 @@
 .menu_footer a {
     color: var(--text-color-2);
     margin-right: 10px;
+}
+
+.headerHr {
+    margin: 8px auto !important;
+    width: 32%;
+    
 }

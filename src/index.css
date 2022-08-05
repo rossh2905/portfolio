@@ -5,6 +5,9 @@
     --text-color: #fff;
     --text-color-2: #fff;
     --overlay-color: rgb(12 12 12 / 63%);
+    --highlight-color: linear-gradient(90deg, #2d7aac 0%, #27c490 27%, #c17fff 100%);
+    --secondary-highlight-color: linear-gradient(90deg, #c17fff 0%, #27c490 33%, #2d7aac 79%);
+    --green: #29a19d;
 }
 
 [data-theme="light"] {
@@ -72,19 +75,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.cursor__dot div {
-    z-index: 999999 !important;
-}
 
-.cursor__dot div:last-child {
-    filter: invert(1);
-    background-color: var(--primary-color) !important;
-}
-
-.cursor__dot div:first-child {
-    filter: invert(1);
-    background-color: var(--overlay-color) !important;
-}
 
 .color_pr {
     color: var(--primary-color) !important;
@@ -92,4 +83,59 @@ code {
 
 .color_sec {
     color: var(--secondary-color);
+}
+
+.highlight {
+    color: var(--green);
+    fill: var(--green);
+    /* Fallback: Set a background color. */
+    background-color: rgb(15,67,101) !important;
+
+    /* Create the gradient. */
+    background-image: var(--highlight-color) !important;
+
+    /* Set the background size and repeat properties. */
+    background-size: fit-content;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.secondaryHighlight {
+    color: var(--green);
+    fill: var(--green);
+    /* Fallback: Set a background color. */
+    background-color: rgb(15,67,101) !important;
+
+    /* Create the gradient. */
+    background-image: var(--secondary-highlight-color) !important;
+
+    /* Set the background size and repeat properties. */
+    background-size: fit-content;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.back {
+    margin-top: 16px;
+    height: 32px;
+    width: 32px;
+}
+
+.form-control:focus {
+    transition-duration: 0.125s;
+    background-color: var(--bg-color) !important;
+    border: 1px solid var(--green);
+    box-shadow: 0px 0px 8px 2px rgba(41,161,157,0.86);
 }
